@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/txtNombre"
+        android:text="ingrese el nombre"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ingrese el nombre"
+        android:id="@+id/editTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/txtUrl"
+        android:text="ingrese la url correspondiente"
+        app:layout_constraintTop_toBottomOf="@id/editTitulo"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ingrese la url correspondiente"
+        android:id="@+id/editUrl"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrl"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="continuar"
+        android:id="@+id/BotonContinuar"
+        app:layout_constraintTop_toBottomOf="@id/editUrl"/>
+</android.support.constraint.ConstraintLayout>
